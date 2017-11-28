@@ -9,6 +9,7 @@
   <p>Hello World! </p>
 
   <div id="app"></div>
+  <div id="apple"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
@@ -16,9 +17,9 @@
     class Greeting extends React.Component {
        render() {
          return (
-           <div>
-             <h1>Hello World!</h1>
-           </div>
+           <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
+      style={{width: 400, height: 400}} />
+           
          );
        }
      }
@@ -26,6 +27,8 @@
      ReactDOM.render(
        <Greeting />, document.getElementById('app')
      );
+
+
   </script>
 </body>
 
