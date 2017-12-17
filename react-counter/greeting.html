@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <p>Hello World! </p>
+  <p>Hello World!</p>
 
   <div id="app"></div>
   <div id="apple"></div>
@@ -14,18 +14,35 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
   <script type="text/babel">
-    class Greeting extends React.Component {
+
+  class Greeting extends React.Component {
+           render() {
+             return (
+               <div>
+                 <h1>Hello World!</h1>
+               </div>
+             );
+           }
+         }
+
+         ReactDOM.render(
+           <Greeting />, document.getElementById('app')
+         );
+
+    class Apple extends React.Component {
        render() {
          return (
-           <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
-      style={{width: 400, height: 400}} />
-           
+           <div>
+            <img src= 'https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f34e.svg' height = {600} width = {600}/>
+
+           </div>
          );
+
        }
      }
 
      ReactDOM.render(
-       <Greeting />, document.getElementById('app')
+       <Apple />, document.getElementById('apple')
      );
 
 
